@@ -21,13 +21,13 @@ public:
 	char remove();
     int getSize();
     void print();
-    DynamicNode* find(char key, DynamicNode *previous, DynamicNode* last);
+    DynamicNode* find(char key);
 	DynamicNode* remove(char key);
 
 private:
 	DynamicNode* front;
 	DynamicNode* rear;
-    int size;
+    int size = 0;
 };
 #endif
 

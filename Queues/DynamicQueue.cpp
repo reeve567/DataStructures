@@ -60,7 +60,7 @@ int DynamicQueue::getSize() {
 
 void DynamicQueue::print() {
     for (DynamicNode* node = front; node != nullptr; node = node->next) {
-        std::cout << "node";
+        std::cout << node->info;
         if (node->next != nullptr) {
             std::cout << "->";
         }
@@ -68,6 +68,8 @@ void DynamicQueue::print() {
 }
 
 DynamicNode* DynamicQueue::remove(char key) {
+	if (front == nullptr) return nullptr;
+
 	if (front->info == key) {
 		DynamicNode* node = front;
 		front = front->next;
@@ -87,16 +89,12 @@ DynamicNode* DynamicQueue::remove(char key) {
 	return nullptr;
 }
 
-DynamicNode* DynamicQueue::find(char key, DynamicNode* previous, DynamicNode* last) {
+DynamicNode* DynamicQueue::find(char key) {
 	DynamicNode* found = nullptr;
     for (DynamicNode* node = front; node != nullptr; node = node->next) {
-        previous = node;
         if (node->info == key) {
             found = node;
         }
-		if (node->next == nullptr) {
-			last = node;
-		}
     }
     return found;
 }
