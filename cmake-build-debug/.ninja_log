@@ -1,0 +1,7 @@
+# ninja log v5
+0	407	1676483084401603575	CMakeFiles/data_structures.dir/ListLab/DynamicLists.cpp.o	9822827dcb97d049
+0	410	1676484061275758450	CMakeFiles/data_structures.dir/ListLab/main.cpp.o	b2833daba4b45834
+0	437	1675458270120069089	CMakeFiles/data_structures.dir/Queens/QueensRecursion.cpp.o	b6bea4c0cc63f071
+1	514	1675458153192756952	CMakeFiles/data_structures.dir/stacks/main.cpp.o	beb39a329d14b319
+410	451	1676484061315758225	data_structures	83c9c8ea68809387
+1	462	1675458153140757258	CMakeFiles/data_structures.dir/stacks/Stack.cpp.o	50d9f78fdbd2bc1
